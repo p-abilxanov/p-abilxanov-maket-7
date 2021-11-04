@@ -1,0 +1,112 @@
+@media only screen and (min-width: 590px) {
+    .carousel__add {
+        padding: $wokCarouselAddPadding;
+
+        .carouselAdd__count {
+            span {
+                font-size: $wokCarouselAddCountSpanFontSize;
+            }
+
+            .carousel-add-number {
+                margin-left: $wokCarouselAddNumberMarginLeft;
+                height: $wokCarouselAddNumberHeight;
+                padding: $wokCarouselAddNumberPadding;
+
+                span {
+                    padding-right: $wokCarouselAddNumberSpanPaddingRight;
+                }
+
+                .carousel-icon-plus {
+                    font-size: $wokCarouselIconPlusSize;
+                }
+            }
+        }
+
+        .carouselAdd__plus {
+            span {
+                font-size: $wokCarouselAddPlusFontSize;
+
+                span {
+                    padding-left: $wokCarouselAddPlusSpanPaddingLeft;
+                    font-size: $wokCarouselAddPlusSpanFontSize;
+                }
+            }
+
+            button {
+                margin-left: $wokCarouselAddPlusBtnMarginLeft;
+                padding: $wokCarouselAddPlusBtnPadding;
+                font-size: $wokCarouselAddPlusBtnFontSize;
+            }
+        }
+    }
+
+    .carousel__select {
+        @include blockSize(100%, $wokSelectHeight);
+
+        label {
+            @include blockSize($wokSelectHeight, 100%);
+        }
+
+        select {
+            padding: $wokSelectPadding;
+            font-size: $wokSelectFontSize;
+        }
+    }
+}
+
+@media only screen and (max-width: 589px) {
+    .carousel__add {
+        padding: calc(.2em + 2vw) 0;
+
+        .carouselAdd__count {
+            span {
+                font-size: calc(.2em + 1.5vw);
+            }
+
+            .carousel-add-number {
+                margin-left: calc(.2em + 1.5vw);
+                height: calc(.3em + 3vw);
+                padding: calc(.1em + .5vw);
+
+                span {
+                    padding-right: calc(.2em + 1.5vw);
+                }
+
+                .carousel-icon-plus {
+                    font-size: calc(.2em + 3vw);
+                }
+            }
+        }
+
+        .carouselAdd__plus {
+            span {
+                font-size: calc(.2em + 1.5vw);
+
+                span {
+                    padding-left: calc(.1em + .5vw);
+                    font-size: calc(.2em + 1.5vw);
+                }
+            }
+
+            button {
+                margin-left: calc(.2em + 2vw);
+                padding: calc(.1em + .5vw);
+                font-size: calc(.2em + 1.5vw);
+            }
+        }
+    }
+
+    .carousel__select {
+        @include blockSize(100%, calc(.4em + 5vw));
+
+        label {
+            font-size: calc(.2em + 1.5vw);
+            @include blockSize(calc(.4em + 5vw), 100%);
+        }
+
+        select {
+            padding: 0 calc(.2em + 1.5vw);
+            font-size: calc(.2em + 1.5vw);
+        }
+    }
+}

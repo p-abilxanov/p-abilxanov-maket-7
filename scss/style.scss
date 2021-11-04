@@ -1,0 +1,62 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.title-group {
+    @include flexbox(none, none, center);
+    font-family: $fontFamilyLemonTuesdayRegular;
+    color: $titleGroupColor;
+    line-height: 0.474;
+    text-align: center;
+    position: relative;
+}
+
+@import "mediaQuery/mediaQueryStyle";
+
+@import "header";
+@import "mediaQuery/mediaQueryHeader";
+
+@import "banner";
+@import "mediaQuery/mediaQueryBanner";
+
+@import "set";
+@import "mediaQuery/mediaQuerySet";
+
+@import "roll";
+@import "mediaQuery/mediaQueryRoll";
+
+@import "wok";
+@import "mediaQuery/mediaQueryWok";
+
+@import "new";
+@import "mediaQuery/mediaQueryNew";
+
+@import "reason";
+@import "mediaQuery/mediaQueryReason";
+
+@import "comment";
+@import "mediaQuery/mediaQueryComment";
+
+@import "form";
+@import "mediaQuery/mediaQueryForm";
+
+@import "text";
+@import "mediaQuery/mediaQueryText";
+
+@import "footer";
+@import "mediaQuery/mediaQueryFooter";

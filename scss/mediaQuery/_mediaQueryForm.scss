@@ -1,0 +1,123 @@
+@media only screen and (min-width: 877px) {
+    .form-main {
+        width: 70%;
+
+        .form__title {
+            font-size: $formTitleFontSize;
+        }
+
+        form {
+            input {
+                flex-basis: $formInputFlexBasis;
+            }
+
+            button {
+                padding: $formBtnPadding;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 590px) {
+    .form-main {
+        padding: $flexMainPadding;
+
+        .form__subtitle {
+            font-size: $flexSubtitleFontSize;
+        }
+
+        .form__title {
+            padding: $flexTitlePadding;
+        }
+
+        form {
+            @include flexbox(none, space-between, center);
+            padding-bottom: $flexPaddingBottom;
+
+            input {
+                font-size: $flexInputFontSize;
+                padding: $flexInputPadding;
+
+                &::placeholder {
+                    font-size: $flexInputFontSize;
+                }
+            }
+
+            button {
+                font-size: $flexBtnFontSize;
+                text-align: center;
+            }
+        }
+
+        .form__content {
+            font-size: $flexContentFontSize;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 876px) and (min-width: 590px) {
+    .form-main {
+        width: 100%;
+
+        .form__title {
+            font-size: $mobileFormTitleFontSize;
+        }
+
+        form {
+
+            button,
+            input {
+                flex-basis: $mobileFormInputFlexBasis;
+            }
+
+            button {
+                padding: $mobileFormBtnPadding;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 589px) {
+    .form-main {
+        width: 100%;
+        padding: calc(1em + 5vw) 0;
+
+        .form__subtitle {
+            font-size: calc(.2em + 3vw);
+        }
+
+        .form__title {
+            padding: calc(.1em + 1vw) 0 calc(.3em + 4vw) 0;
+            font-size: calc(1em + 7vw);
+            line-height: 1.2;
+        }
+
+        form {
+            @include flexbox(column, none, none);
+            padding-bottom: calc(.4em + 4vw);
+
+            input {
+                font-size: calc(.2em + 2vw);
+                padding: calc(.2em + 1.5vw);
+                margin-bottom: calc(.3em + 3vw);
+
+                &::placeholder {
+                    font-size: calc(.2em + 2vw);
+                }
+            }
+
+            button {
+                margin-top: calc(.2em + 2vw);
+                padding: calc(.3em + 2vw) 0;
+                font-size: calc(.2em + 2vw);
+                text-align: center;
+            }
+        }
+
+        .form__content {
+            font-size: calc(.2em + 1.5vw);
+            line-height: 1.2;
+        }
+    }
+}

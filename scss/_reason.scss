@@ -1,0 +1,26 @@
+.reason {
+    .container {
+        @include flexbox(column, none, center);
+    }
+}
+
+.reason__main {
+    input {
+        display: none;
+    }
+
+    .reason__item {
+        @include flexbox(column, none, center);
+
+        .reason__img {
+            @include flexbox(none, center, center);
+        }
+
+        .reason__text {
+            font-family: $fontFamilyOpenSansRegular;
+            color: $reasonTextColor;
+            line-height: 1.777;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.carousel__add {
+    width: 100%;
+    @include flexbox(none, space-between, center);
+
+    .carouselAdd__count {
+        @include flexbox(none, none, center);
+
+        span {
+            @include flexbox(none, space-between, center);
+            font-family: $fontFamilyOpenSansRegular;
+            color: $wokCarouselAddCountSPanColor;
+            line-height: 2.369;
+        }
+
+        .carousel-add-number {
+            cursor: pointer;
+            @include flexbox(none, space-between, center);
+            border-radius: 3px;
+            background-color: $wokCarouselAddNumberBgColor;
+
+            .carousel-icon-plus {
+                padding-right: 0;
+                display: inline-block;
+                color: $wokCarouselIconPlus;
+                transform: rotateZ(45deg);
+            }
+        }
+    }
+
+    .carouselAdd__plus {
+        @include flexbox(none, space-between, center);
+
+        span {
+            @include flexbox(none, none, flex-start);
+            font-family: $fontFamilyOpenSansLight;
+            color: $wokCarouselAddCountSPanColor;
+            line-height: 2.369;
+        }
+
+        button {
+            border-radius: 3px;
+            background-color: $wokCarouselPlusBtnBgColor;
+            color: $wokCarouselPlusBtnColor;
+        }
+    }
+}
+
+.carousel__select {
+    background-color: $wokCarouselSelectBgColor;
+    position: relative;
+    border-radius: 3px;
+
+    label {
+        border-radius: inherit;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        @include flexbox(none, center, center);
+        background: $wokCarouselSelectLabelBgColor;
+        border: $wokCarouselSelectLabelBorder;
+    }
+
+    select {
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        @include blockSize(100%, 100%);
+        font-family: $fontFamilyOpenSansLight;
+        color: $wokCarouselSelectColor;
+        line-height: 2.369;
+        appearance: none;
+        border-radius: inherit;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+}

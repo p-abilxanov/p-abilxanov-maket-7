@@ -1,0 +1,75 @@
+.comment {
+    .container {
+        @include flexbox(column, none, center);
+    }
+}
+
+.comment__main {
+    .comment__item {
+        @include flexbox(column, none, none);
+        border: $commentItemBorder;
+    }
+}
+
+.commentItem__title {
+    @include flexbox(none, none, center);
+
+    .comment__info {
+        .comment__name {
+            font-family: $fontFamilyOpenSansBold;
+            color: $commentNameColor;
+            cursor: pointer;
+        }
+
+        .comment__date {
+            font-family: $fontFamilyOpenSansSemiBold;
+            color: $commentDateColor;
+        }
+    }
+}
+
+.commentItem__content {
+    font-family: $fontFamilyOpenSansRegular;
+    color: $commentItemContentColor;
+    line-height: 1.286;
+}
+
+.commentItem__like {
+    @include flexbox(none, none, center);
+    border-top: $commentItemLikeBorderTop;
+
+    input {
+        display: none;
+
+        &:checked+label {
+            i {
+                color: $commentHeartHoverColor;
+            }
+        }
+    }
+
+    button {
+        @include flexbox(none, none, center);
+        background-color: transparent;
+
+        span {
+            font-family: $fontFamilyOpenSansBold;
+            color: $commentLikeBtn;
+        }
+    }
+
+    i {
+        transition: color .5s;
+        color: $commentHeartColor;
+    }
+}
+
+.commentItem__btn {
+    button {
+        width: 100%;
+        font-family: $fontFamilyOpenSansBold;
+        color: $commentBtnColor;
+        background-color: $commentBtnBgColor;
+        border-radius: 3px;
+    }
+}

@@ -1,0 +1,200 @@
+@media only screen and (min-width: 1200px) {
+    .set {
+        padding: $setPadding1200pxMin;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .set {
+        padding: $setPadding1200pxMax;
+    }
+}
+
+@media only screen and (min-width: 590px) {
+    .carousel-group {
+        padding-bottom: $setCarouselGroupPaddingBottom;
+
+        .slick-track {
+            padding: $setSlickTrackPadding;
+        }
+
+        .slick-arrow {
+            bottom: $setSlickArrowBottom;
+
+            &::before {
+                font-size: $setSlickArrowSize;
+            }
+        }
+
+        .slick-next {
+            right: $setSlickArrowRight;
+        }
+
+        .slick-prev {
+            left: $setSlickArrowRight;
+        }
+
+        .carousel__item {
+            margin: $setItemMargin;
+        }
+    }
+
+    .carousel__img {
+        img {
+            @include blockSize(100%, auto);
+        }
+
+        .carousel-img-circle {
+            top: $setImgCirclePosition;
+            right: $setImgCirclePosition;
+            @include blockSize($setImgCircleSize, $setImgCircleSize);
+            font-size: $setImgCircleFontSize;
+        }
+    }
+
+    .carousel__content {
+        padding: $setCarouselContentPadding;
+
+        .carousel__number {
+            font-size: $setNumberFontSize;
+            padding-bottom: $setNumberPaddingBottom;
+        }
+
+        .carousel__count {
+            font-size: $setCountFontSize;
+        }
+
+        .carousel__price {
+            padding: $setPricePadding;
+
+            span {
+                span {
+                    padding: $setPriceSpanPadding;
+                }
+
+                button {
+                    @include blockSize($setPriceBtnSize, $setPriceBtnSize);
+                    font-size: $setPriceBtnFontSize;
+                }
+            }
+
+            .carousel-price {
+                font-size: $setPriceFontSize;
+
+                span {
+                    padding-left: $setPriceSpanPaddingLeft;
+                    font-size: $setPriceSpanFontSize;
+                }
+
+            }
+        }
+
+        .carousel__btn {
+            button {
+                font-size: $setBtnFontSize;
+                padding: $setBtnPadding;
+
+                i {
+                    margin-left: $setBtnIconMarginLeft;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 589px) {
+    .carousel-group {
+        padding-bottom: calc(.5em + 5vw);
+
+        .slick-track {
+            padding: calc(.2em + 1.5vw) 0;
+        }
+
+        .carousel__item {
+            overflow: hidden;
+            margin: calc(.2em + 2vw);
+            position: relative;
+
+            &::before {
+                content: "";
+                display: block;
+                @include blockSize(100%, 100%);
+                border-radius: inherit;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 3;
+                background-color: rgba($color: #fff, $alpha: .8);
+                transition: opacity .5s, visibility .5s;
+            }
+        }
+
+        .slick-current::before {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    .carousel__img {
+        img {
+            @include blockSize(100%, auto);
+        }
+
+        .carousel-img-circle {
+            top: calc(.2em + 2vw);
+            right: calc(.2em + 2vw);
+            @include blockSize(calc(1em + 8vw), calc(1em + 8vw));
+            font-size: calc(.2em + 2vw);
+        }
+    }
+
+    .carousel__content {
+        padding: calc(.4em + 3vw) calc(.4em + 4vw);
+
+        .carousel__number {
+            font-size: calc(.2em + 2vw);
+            padding-bottom: calc(.2em + 2vw);
+        }
+
+        .carousel__count {
+            font-size: calc(.1em + 2vw);
+        }
+
+        .carousel__price {
+            padding: calc(.3em + 4vw) 0;
+
+            span {
+                span {
+                    padding: 0 calc(.2em + 1.5vw);
+                    font-size: calc(.2em + 2vw);
+                }
+
+                button {
+                    @include blockSize(calc(.3em + 2vw), calc(.3em + 2vw));
+                    font-size: calc(.2em + 1.5vw);
+                }
+            }
+
+            .carousel-price {
+                font-size: calc(.3em + 2vw);
+
+                span {
+                    padding-left: calc(.5vw);
+                    font-size: calc(.2em + 1.5vw);
+                }
+
+            }
+        }
+
+        .carousel__btn {
+            button {
+                font-size: calc(.2em + 2vw);
+                padding: calc(.2em + 1.5vw) calc(.1em + 1vw);
+
+                i {
+                    margin-left: calc(.2em + 3vw);
+                }
+            }
+        }
+    }
+}

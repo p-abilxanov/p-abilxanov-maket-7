@@ -1,0 +1,44 @@
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1170px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (min-width: 590px) {
+    .title-group {
+        font-size: 60px;
+        padding: 90px 0 50px 0;
+
+        img {
+            @include blockSize(auto, auto);
+        }
+
+        span {
+            margin: 0 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 589px) {
+    .title-group {
+        font-size: calc(1em + 6vw);
+        padding: calc(1em + 5vw) 0;
+
+        img {
+            @include blockSize(calc(1em + 6vw), auto);
+        }
+
+        span {
+            margin: 0 calc(.3em + 3vw);
+        }
+    }
+}

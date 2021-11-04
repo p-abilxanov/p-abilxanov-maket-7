@@ -1,0 +1,49 @@
+@media only screen and (min-width: 1200px) {
+    .new-label {
+        padding: $newLabelPaddingDesktop;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 590px) {
+    .new-label {
+        padding: $newLabelPadding;
+    }
+}
+
+@media only screen and (min-width: 590px) {
+    .new {
+        padding-bottom: $newPaddingBottom;
+        margin-top: $newMarginTop;
+
+        .new-label {
+            label {
+                margin-right: $newLabelMarginRight;
+                font-size: $newLabelFontSize;
+            }
+        }
+
+        .carouselImg__new {
+            font-size: $newImgNewFontSize;
+        }
+    }
+}
+
+@media only screen and (max-width: 589px) {
+    .new {
+        padding-bottom: calc(.4em + 4vw);
+        margin-top: calc(.3em + 3vw);
+
+        .new-label {
+            padding: calc(.4em + 5vw) 15px calc(.4em + 4vw) 15px;
+
+            label {
+                margin-right: calc(.3em + 3vw);
+                font-size: calc(.3em + 3vw);
+            }
+        }
+
+        .carouselImg__new {
+            font-size: calc(.3em + 2vw);
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.footer {
+    background-color: $footerBgColor;
+    @include flexbox(column, none, none);
+}
+
+.footer__item {
+    input {
+        display: none;
+
+        &:checked+label i {
+            transform: rotateZ(180deg);
+        }
+    }
+
+    ul {
+        li {
+            a {
+                font-family: $fontFamilyOpenSansRegular;
+                color: $footerLinkColor;
+                line-height: 2;
+            }
+        }
+    }
+
+    label i {
+        transition: transform .5s;
+        transform-origin: center center;
+    }
+
+    label,
+    &:nth-child(1) ul li a {
+        font-family: $fontFamilyOpenSansRegular;
+        color: $footerMenuColor;
+        line-height: 1.8;
+    }
+}
+
+.footer__main {
+    .footerMain__name {
+        font-family: $fontFamilyOpenSansRegular;
+        color: $footerMainNameColor;
+        line-height: 1.2;
+    }
+
+    .footerMain__link {
+        a {
+            font-family: $fontFamilyOpenSansRegular;
+            color: $footerMainNameColor;
+            text-decoration: underline;
+            line-height: 1.2;
+        }
+    }
+
+    .footerMain__social {
+        ul {
+            @include flexbox(none, space-between, center);
+
+            li {
+                a {
+                    border-radius: 50%;
+                    background-color: $footerSocialIconBgColor;
+                    @include flexbox(none, center, center);
+
+                    i {
+                        color: $footerSocialIconColor;
+                    }
+                }
+            }
+        }
+    }
+}

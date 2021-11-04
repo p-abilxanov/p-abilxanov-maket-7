@@ -1,0 +1,278 @@
+@media only screen and (min-width: 1200px) {
+    .footer {
+        padding: $footerPadding1200pxMin;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 877px) {
+    .footer {
+        padding: $footerPadding1199pxMax;
+    }
+}
+
+@media only screen and (min-width: 877px) {
+    .footer__nav {
+        @include flexbox(none, space-between, none);
+        padding: $footerNavPadding;
+    }
+
+    .footer__item {
+        ul {
+            li {
+                a {
+                    font-size: $footerLinkFontSize;
+                }
+            }
+        }
+
+        .footerItem__link {
+            @include flexbox(none, space-between, none);
+
+            ul:nth-child(1) {
+                padding-right: $footerLinkUlPaddingRight;
+            }
+        }
+
+        label {
+            i {
+                display: none;
+            }
+        }
+
+        label,
+        &:nth-child(1) ul li a {
+            font-size: $footerLabelFontSize;
+        }
+    }
+
+    .footer__main {
+        @include flexbox(none, space-between, center);
+
+        .footerMain__name {
+            font-size: $footerMainNameFontSize;
+        }
+
+        .footerMain__link {
+            a {
+                font-size: $footerMainLinkFontSize;
+            }
+        }
+
+        .footerMain__social {
+            ul {
+                li {
+                    &:nth-child(n+2) {
+                        margin-left: $footerSocialIconMarginLeft;
+                    }
+
+                    a {
+                        @include blockSize($footerSocialIconSize, $footerSocialIconSize);
+
+                        i {
+                            font-size: $footerSocialIconFontSize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 876px) and (min-width: 590px) {
+    .footer__nav {
+        @include flexbox(column, none, none);
+    }
+
+    .footer__item {
+        ul {
+            padding: $footerItemUlPadding;
+
+            li {
+                a {
+                    font-size: $footerLinkFontSize;
+                }
+            }
+        }
+
+        .footerItem__link {
+            padding: $footerItemUlPadding;
+            @include flexbox(none, none, none);
+
+            ul:nth-child(1) {
+                padding-right: $footerLinkUlPaddingRight;
+            }
+        }
+
+        input:checked {
+
+            &~ul,
+            &~.footerItem__link,
+            &~.footerItem__link ul {
+                max-height: 300px;
+            }
+
+            &~.footerItem__link,
+            &~ul {
+                padding: $footerAccordionPadding;
+            }
+        }
+
+        .footerItem__link,
+        ul {
+            transition: max-height .5s;
+            max-height: 0;
+            overflow: hidden;
+            background-color: $footerAccordionBgColor;
+        }
+
+        label {
+            width: 100%;
+            @include flexbox(none, space-between, center);
+            padding: $footerAccordionLabelPadding;
+            border: $footerAccordionLabelBorder;
+
+            i {
+                font-size: $footerAccordionLabelIconSize;
+            }
+        }
+
+        label,
+        &:nth-child(1) ul li a {
+            font-size: $footerLabelFontSize;
+        }
+    }
+
+    .footer__main {
+        @include flexbox(none, space-between, center);
+        padding: $footerMainPadding;
+
+        .footerMain__name {
+            font-size: $footerMainNameFontSize;
+        }
+
+        .footerMain__link {
+            a {
+                font-size: $footerMainLinkFontSize;
+            }
+        }
+
+        .footerMain__social {
+            ul {
+                li {
+                    &:nth-child(n+2) {
+                        margin-left: $footerSocialIconMarginLeft;
+                    }
+
+                    a {
+                        @include blockSize($footerSocialIconSize, $footerSocialIconSize);
+
+                        i {
+                            font-size: $footerSocialIconFontSize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 589px) {
+    .footer__nav {
+        @include flexbox(column, none, none);
+    }
+
+    .footer__item {
+        ul {
+            padding: 0 15px;
+
+            li {
+                a {
+                    font-size: calc(.2em + 2vw);
+                }
+            }
+        }
+
+        .footerItem__link {
+            padding: 0 15px;
+            @include flexbox(none, none, none);
+
+            ul:nth-child(1) {
+                padding-right: calc(.2em + 2vw);
+            }
+        }
+
+        input:checked {
+
+            &~ul,
+            &~.footerItem__link,
+            &~.footerItem__link ul {
+                max-height: 300px;
+            }
+
+            &~.footerItem__link,
+            &~ul {
+                padding: calc(.3em + 3vw) 15px calc(.4em + 4vw) 15px;
+            }
+        }
+
+        .footerItem__link,
+        ul {
+            transition: max-height .5s;
+            max-height: 0;
+            overflow: hidden;
+            background-color: rgb(32, 53, 61);
+        }
+
+        label {
+            width: 100%;
+            @include flexbox(none, space-between, center);
+            padding: calc(.4em + 3vw) 15px;
+            border: 1px solid rgb(32, 53, 61);
+
+            i {
+                font-size: calc(.3em + 3vw);
+            }
+        }
+
+        label,
+        &:nth-child(1) ul li a {
+            font-size: calc(.2em + 2vw);
+        }
+    }
+
+    .footer__main {
+        @include flexbox(column-reverse, none, center);
+        padding: calc(.4em + 4vw) 15px;
+
+        .footerMain__name {
+            font-size: calc(.2em + 2vw);
+            padding-top: calc(.4em + 4vw);
+        }
+
+        .footerMain__link {
+            padding-top: calc(.4em + 4vw);
+
+            a {
+                font-size: calc(.2em + 2vw);
+            }
+        }
+
+        .footerMain__social {
+            ul {
+                li {
+                    &:nth-child(n+2) {
+                        margin-left: calc(.2em + 2vw);
+                    }
+
+                    a {
+                        @include blockSize(calc(.4em + 5vw), calc(.4em + 5vw));
+
+                        i {
+                            font-size: calc(.2em + 2vw);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

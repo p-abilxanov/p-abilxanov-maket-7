@@ -1,0 +1,147 @@
+button,
+label {
+    cursor: pointer;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+.header-desktop {
+    @include flexbox(column, none, none);
+
+    .header__info {
+        .container {
+            @include flexbox(none, space-between, center);
+        }
+
+        .headerInfo__left,
+        .headerInfo__right {
+            @include flexbox(none, space-between, center);
+        }
+    }
+}
+
+.header__address,
+.header__email {
+    a {
+        i {
+            color: $headerAddressIconColor;
+        }
+
+        span {
+            font-family: $fontFamilyRobotoRegular;
+            color: $headerAddressTextColor;
+            line-height: 1.2;
+        }
+    }
+}
+
+.header__tell {
+    @include flexbox(column, none, none);
+
+    span {
+        font-family: $fontFamilyOpenSansBold;
+        color: $headerTellColor;
+        line-height: 1.2;
+    }
+}
+
+.header__btn {
+    button {
+        background-color: transparent;
+        outline: none;
+        border: 1px solid $headerBtnColor;
+        font-family: $fontFamilyOpenSansRegular;
+        color: $headerBtnColor;
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+}
+
+.header__menu {
+    position: relative;
+    @include flexbox(none, center, center);
+
+    ul {
+        width: 100%;
+        @include flexbox(none, center, center);
+
+        li {
+            position: relative;
+            @include flexbox(none, center, center);
+
+            a {
+                @include flexbox(none, none, center);
+                font-family: $fontFamilyOpenSansSemiBold;
+                color: $headerMenuTextColor;
+                text-transform: uppercase;
+                line-height: 1.2;
+                transition: background-color .5s, color .5s;
+
+                i {
+                    position: relative;
+                    @include flexbox(none, flex-end, none);
+                }
+
+                &:hover {
+                    background-color: $headerMenuTextHoverBgColor;
+                    color: $headerMenuTextHoverColor;
+                }
+            }
+
+            ul {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                z-index: 4;
+                @include flexbox(column, none, none);
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height .5s, box-shadow .5s;
+                box-shadow: 0 .5px 30px 0 transparent;
+
+                li {
+                    width: 100%;
+
+                    a {
+                        transition: background-color .5s, color .5s;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        li:not(.menu-dropdown) {
+            a {
+                &:hover i {
+                    color: $headerMenuTextHoverColor;
+                }
+
+                i {
+                    transition: color .5s;
+                    color: $headerMenuTextHoverBgColor;
+                }
+            }
+        }
+
+        .menu-dropdown {
+
+            a:hover+ul,
+            ul:hover {
+                max-height: 400px;
+                box-shadow: $headerMenuDropDownBoxShadow;
+            }
+
+            ul li a:hover {
+                background-color: $headerMenuTextHoverBgColor;
+            }
+
+        }
+    }
+}
+
+.header__logo {
+    cursor: pointer;
+}

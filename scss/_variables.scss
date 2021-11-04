@@ -1,0 +1,315 @@
+// FONT FAMILY VARIABLES
+$fontFamilyLemonTuesdayRegular: 'LemonTuesday - Regular';
+$fontFamilyRobotoSlabBold: 'RobotoSlab - Bold';
+$fontFamilyRobotoRegular: 'Roboto - Regular';
+$fontFamilyOpenSansBold: 'OpenSans - Bold';
+$fontFamilyOpenSansRegular: 'OpenSans - Regular';
+$fontFamilyOpenSansLight: 'OpenSans - Light';
+$fontFamilyOpenSansSemiBold: "OpenSans - SemiBold";
+$fontFamilyOpenSansItalic: "OpenSans - Italic";
+$fontFamilyFontAwesomeFree: 'Font Awesome 5 Free';
+
+
+// TITLE GROUP VARAIBLE
+$titleGroupColor: rgb(50, 80, 90);
+
+
+// HEADER VARIABLES
+$headerAddressIconColor: #1fba0a;
+$headerAddressTextColor: rgb(0, 0, 0);
+$headerTellColor: rgb(1, 1, 1);
+$headerBtnColor: rgb(31, 186, 10);
+$headerMenuTextColor: #000;
+$headerMenuTextHoverColor: #fff;
+$headerMenuTextHoverBgColor: rgb(132, 198, 4);
+$headerMenuDropDownBoxShadow: 0 .5px 30px 0 rgba($color: #ccc, $alpha: .3);
+$headerInfoPadding: 10px 0 20px 0;
+$headerAddressPaddingLeft: 50px;
+$headerAddressIconSize: 18px;
+$headerAddressFontSize: 14px;
+$headerEmailIconSize: 14px;
+$headerEmailFontSize: 14px;
+$headerTellPaddingLeft: 70px;
+$headerTellTopFontSize: 18px;
+$headerTellBottomFontSize: 10px;
+$headerBtnPaddingLeft: 25px;
+$headerBtnPadding: 10px 17px;
+$headerBtnFontSize: 13px;
+$headerMenuBorderColor: rgb(242, 242, 242);
+$headerMenuItemPadding: 15px 28px 15px 28px;
+$headerMenuItemFontSize: 14px;
+$headerMenuItemIconSize: 18px;
+$headerMenuShoppingBasketBgColor: rgb(253, 79, 16);
+$headerMenuShoppingBasketPadding: 2px 3px;
+$headerMenuShoppingBasketFontSize: 7px;
+$headerMenuShoppingBasketColor: #fff;
+$headerMenuIconPadding: 0 17px 0 0;
+$headerMenuDropDownIconPaddingLeft: 15px;
+$mobileHeaderAddressPaddingLeft: 20px;
+$mobileHeaderAddressIconSize: 16px;
+$mobileHeaderAddressFontSize: 12px;
+$mobileHeaderEmailIconSize: 12px;
+$mobileHeaderEmailFontSize: 12px;
+$mobileHeaderTellPaddingLeft: 20px;
+$mobileHeaderTellTopFontSize: 16px;
+$mobileHeaderTellBottomFontSize: 8px;
+$mobileHeaderBtnPaddingLeft: 10px;
+$mobileHeaderBtnPadding: 5px 10px;
+$mobileHeaderBtnFontSize: 12px;
+$mobileHeaderMenuItemPadding: 15px;
+$mobileHeaderMenuItemFontSize: 12px;
+$mobileHeaderMenuItemIconSize: 16px;
+$mobileHeaderMenuIconPadding: 0 12px 0 0;
+$mobileHeaderMenuDropDownIconPaddingLeft: 12px;
+$headerHamburgerMenuBgColor: #4ec83d;
+$headerHamburgerMenuPadding: 40px 25px 60px 60px;
+$headerHamburgerMenuFontSize: 14px;
+$headerHamburgerMenuColor: #000;
+
+// BANNER VARIABLES
+$bannerSlickArrowBgColor: rgba($color: #000000, $alpha: .8);
+$bannerSlickArrowBlockSize: 53px;
+$bannerSlickArrowIconSize: 24px;
+$bannerSlickArrowIconColor: #fff;
+$bannerSlickDotsActiveBtnBgColor: #1fba0a;
+$bannerSlickDotsActiveBtnBorderColor: #1fba0a;
+$bannerSlickDotsBtnBorder: 2px solid #c2c2c2;
+$bannerItemBgUrl: url(../image/sliderImg.png);
+$bannerTitleColor: rgb(132, 198, 4);
+$bannerTextColor: rgb(255, 255, 255);
+$bannerBtnColor: rgb(254, 254, 254);
+$bannerBtnBgColor: rgb(253, 79, 16);
+$bannerDiscountBgColor: linear-gradient(90deg, rgb(183, 31, 36) 0%, rgb(223, 32, 36) 100%);
+$bannerDiscountColor: #fff;
+$bannerContainerPaddingTop: 100px;
+$bannerSlickDotsBottom: 60px;
+$bannerSlickDotsMarginLeft: 25px;
+$bannerContentWidth: 600px;
+$bannerTitleFontSize: 110px;
+$bannerTextFontSize: 26px;
+$bannerTextPadding: 50px 0;
+$bannerBtnPaddingBottom: 150px;
+$bannerBtnPadding: 20px 75px;
+$bannerBtnFontSize: 18px;
+$bannerDiscountSize: 140px;
+$bannerDiscountFontSize: 28px;
+$mobileBannerSlickDotsBottom: 30px;
+$mobileBannerContainerPaddingTop: 60px;
+$mobileBannerContentWidth: 400px;
+$mobileBannerTitleFontSize: 72px;
+$mobileBannerTextFontSize: 18px;
+$mobileBannerTextPadding: 50px 0;
+$mobileBannerBtnPaddingBottom: 70px;
+$mobileBannerBtnPadding: 20px 45px;
+$mobileBannerBtnFontSize: 18px;
+$mobileBannerDiscountSize: 90px;
+$mobileBannerDiscountFontSize: 18px;
+
+
+// SET CAROUSEL VARIABLES
+$setSlickDotsBottom: 20px;
+$setSlickActiveBtnBgColor: rgb(103, 180, 55);
+$setSlickDotsMarginLeft: 22px;
+$setSlickDotsBgColor: rgb(178, 178, 178);
+$setSlickDotsSize: 8px;
+$setItemBgColor: #fff;
+$setItemBoxShadow: 0px .5px 10px 0px rgba(0, 0, 0, 0.08);
+$setItemHoverBoxShadow: 0 1px 12px 0px rgba(0, 0, 0, 0.3);
+$setCarouselImgCircleColor: rgb(255, 255, 255);
+$setCarouselImgCircleXitBgColor: linear-gradient(90deg, rgb(212, 68, 52) 0%, rgb(247, 91, 73) 100%);
+$setCarouselImgCircleXitBoxShadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.39);
+$setCarouselImgCircleVegBgColor: linear-gradient(90deg, rgb(25, 108, 0) 0%, rgb(88, 165, 6) 100%);
+$setCarouselImgCircleVegBoxShadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.39);
+$setCarouselNumberColor: #000;
+$setCarouselPriceBtnBorder: 1px solid rgb(128, 128, 128);
+$setCarouselPriceBtnColor: rgb(128, 128, 128);
+$setCarouselBtnColor: rgb(255, 255, 255);
+$setCarouselBtnBgColor: rgb(253, 79, 16);
+$setPadding1200pxMin: 0 calc((100vw - 1170px) / 2);
+$setPadding1200pxMax: 0 15px;
+$setCarouselContentPadding: 30px 25px 35px 25px;
+$setCarouselGroupPaddingBottom: 60px;
+$setSlickTrackPadding: 10px 0;
+$setSlickArrowBottom: 15px;
+$setSlickArrowSize: 18px;
+$setSlickArrowRight: 35%;
+$setItemMargin: 10px;
+$setImgCirclePosition: 14px;
+$setImgCircleSize: 54px;
+$setImgCircleFontSize: 14px;
+$setNumberFontSize: 20px;
+$setNumberPaddingBottom: 15px;
+$setCountFontSize: 12px;
+$setPricePadding: 25px 0;
+$setPriceSpanPadding: 0 15px;
+$setPriceBtnFontSize: 12px;
+$setPriceBtnSize: 13px;
+$setPriceFontSize: 22px;
+$setPriceSpanFontSize: 14px;
+$setPriceSpanPaddingLeft: 5px;
+$setBtnFontSize: 14px;
+$setBtnPadding: 11px 0;
+$setBtnIconMarginLeft: 20px;
+
+
+
+// ROLL VARIABLES
+$rollImgHeight: 250px;
+$rollImgIconSize: 32px;
+
+
+// WOK VARIABLES
+$wokCarouselAddCountSPanColor: #000;
+$wokCarouselAddNumberBgColor: rgb(242, 242, 242);
+$wokCarouselIconPlus: rgb(128, 128, 128);
+$wokCarouselPlusBtnBgColor: rgb(253, 79, 16);
+$wokCarouselPlusBtnColor: #fff;
+$wokCarouselSelectBgColor: rgb(242, 242, 242);
+$wokCarouselSelectLabelBgColor: linear-gradient(90deg, rgb(217, 217, 217) 0%, rgb(250, 250, 250) 100%);
+$wokCarouselSelectLabelBorder: 1px solid rgb(230, 230, 230);
+$wokCarouselSelectColor: #000;
+$wokCarouselAddPadding: 15px 0;
+$wokCarouselAddCountSpanFontSize: 12px;
+$wokCarouselAddNumberMarginLeft: 10px;
+$wokCarouselAddNumberHeight: 20px;
+$wokCarouselAddNumberPadding: 5px;
+$wokCarouselAddNumberSpanPaddingRight: 10px;
+$wokCarouselIconPlusSize: 16px;
+$wokCarouselAddPlusFontSize: 12px;
+$wokCarouselAddPlusSpanFontSize: 10px;
+$wokCarouselAddPlusSpanPaddingLeft: 4px;
+$wokCarouselAddPlusBtnMarginLeft: 15px;
+$wokCarouselAddPlusBtnPadding: 5px;
+$wokCarouselAddPlusBtnFontSize: 12px;
+$wokSelectHeight: 35px;
+$wokSelectPadding: 0 14px;
+$wokSelectFontSize: 12px;
+
+
+
+// NEW VARIALBES
+$newBgImgUrl: url(../image/newBgImg.png);
+$newLabelCheckedColor: rgb(253, 79, 16);
+$newLabelColor: rgb(153, 153, 153);
+$newImgNewBgColor: rgb(31, 186, 10);
+$newImgNewColor: #fff;
+$newImgNewWidth: 121px;
+$newImgNewPadding: 10px 0;
+$newImgNewTop: 10px;
+$newImgNewBottom: -30px;
+$newLabelPaddingDesktop: 60px calc((100vw - 1170px) / 2 + 10px) 50px calc((100vw - 1170px) / 2 + 10px);
+$newLabelPadding: 60px 25px 50px 25px;
+$newPaddingBottom: 60px;
+$newMarginTop: 20px;
+$newLabelMarginRight: 70px;
+$newLabelFontSize: 18px;
+$newImgNewFontSize: 16px;
+
+
+// REASON VARIABLES
+$reasonTextColor: rgb(77, 77, 77);
+$reasonTitleFontSize: 52px;
+$reasonMainPaddingTop: 40px;
+$reasonItemMargin: 10px 15px;
+$reasonItemFlexBasis: calc((100% - 150px) / 5);
+$reasonImgHeight: 90px;
+$reasonTextFontSize: 16px;
+$mobileReasonItemFlexBasis: calc((100% - 90px) / 3);
+
+
+
+// COMMENT VARIABLES
+$commentItemBorder: 1px solid rgb(230, 230, 230);
+$commentNameColor: rgb(94, 129, 167);
+$commentDateColor: rgb(153, 153, 153);
+$commentItemContentColor: #000;
+$commentItemLikeBorderTop: 1px solid #eaebed;
+$commentHeartHoverColor: rgb(255, 0, 0);
+$commentHeartColor: #bacada;
+$commentLikeBtn: #2b4866;
+$commentBtnColor: #fff;
+$commentBtnBgColor: #5e81a7;
+$commentMainPaddingBottom: 100px;
+$commentItemPadding: 45px 45px 50px 50px;
+$commentItemFlexBasis: calc((100% - 60px) / 3);
+$mobileCommentMainPaddingBottom: 70px;
+$mobileCommentItemPadding: 45px 40px;
+$mobileCommentItemFlexBasis: calc((100% - 30px) / 2);
+$commentInfoPaddingLeft: 8px;
+$commentNameFontSize: 14px;
+$commentDateFontSize: 12px;
+$commentDateMarginTop: 8px;
+$commentItemContentPaddingTop: 30px;
+$commentItemContentFontSize: 14px;
+$commentItemImgPadding: 25px 0;
+$commentItemLikePadding: 17px 0;
+$commentItemLikeBtnMarginLeft: 20px;
+$commentItemLikeBtnSpanPaddingLeft: 8px;
+$commentItemLikeBtnSpanFontSize: 14px;
+$commentItemLikeBtnIconSize: 14px;
+$commentItemBtnFontSize: 14px;
+$commentItemBtnPadding: 10px;
+$commentItemBtnIconPaddingRight: 10px;
+
+
+// FORM VARIABLES
+$formBg: url(../image/formBg.png);
+$formSubTitleColor: rgb(255, 255, 255);
+$formInputFocusBgColor: rgba($color: #fff, $alpha: 0.149);
+$formBtnBgColor:rgb(253, 79, 16);
+$formContentColor: rgba(255, 255, 255, 0.702);
+$formTitleFontSize: 54px;
+$formInputFlexBasis: 30%;
+$formBtnPadding: 18px 50px;
+$flexMainPadding: 75px 0;
+$flexSubtitleFontSize: 16px;
+$flexTitlePadding: 10px 0 50px 0;
+$flexPaddingBottom: 35px;
+$flexInputPadding: 10px;
+$flexInputFontSize: 14px;
+$flexBtnFontSize: 14px;
+$flexContentFontSize: 12px;
+$mobileFormTitleFontSize: 50px;
+$mobileFormInputFlexBasis: calc((100% - 50px) / 3);
+$mobileFormBtnPadding: 18px 0;
+
+
+
+// TEXT VARIABLES
+$textSubtitleColor: rgb(50, 80, 90);
+$textContentColor: rgb(77, 77, 77);
+$textContentImgMargin: 0 0 50px 50px;
+$mobileTextContentImgMargin: 0 0 35px 35px;
+$textMainPaddingBottom: 130px;
+$textSubtitleFontSize: 24px;
+$textSubtitlePadding: 40px 0;
+$textContentFontSize: 14px;
+$textContentMarginBottom: 20px;
+
+
+// FOOTER VARIABLES
+$footerBgColor: rgb(26, 45, 52);
+$footerLinkColor: rgb(107, 150, 165);
+$footerMenuColor: #fff;
+$footerMainNameColor: rgb(107, 150, 165);
+$footerSocialIconColor: rgb(26, 45, 52);
+$footerSocialIconBgColor: #8d969a;
+$footerPadding1200pxMin: 0 calc((100% - 1140px) / 2) 50px calc((100% - 1140px) / 2);
+$footerPadding1199pxMax: 0 15px 50px 15px;
+$footerNavPadding: 75px 0 50px 0;
+$footerLinkFontSize: 12px;
+$footerLinkUlPaddingRight: 25px;
+$footerLabelFontSize: 14px;
+$footerMainNameFontSize: 12px;
+$footerMainLinkFontSize: 12px;
+$footerSocialIconMarginLeft: 15px;
+$footerSocialIconSize: 27px;
+$footerSocialIconFontSize: 14px;
+$footerItemUlPadding: 0 15px;
+$footerAccordionPadding: 20px 15px 30px 15px;
+$footerAccordionBgColor: rgb(32, 53, 61);
+$footerAccordionLabelBorder: 1px solid rgb(32, 53, 61);
+$footerAccordionLabelPadding: 28px 15px;
+$footerAccordionLabelIconSize: 20px;
+$footerMainPadding: 35px 15px;
+

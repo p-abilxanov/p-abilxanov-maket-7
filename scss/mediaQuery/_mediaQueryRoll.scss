@@ -1,0 +1,35 @@
+@media only screen and (min-width: 590px) {
+    .roll-img {
+        @include blockSize(auto, $rollImgHeight);
+
+        img {
+            @include blockSize(auto, auto);
+        }
+    }
+
+    .carousel__fire {
+        i {
+            font-size: $rollImgIconSize;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 589px) {
+    .carousel__fire {
+        i {
+            font-size: calc(.4em + 4vw);
+        }
+    }
+
+    .roll-img {
+        @include blockSize(auto, auto);
+        padding-top: calc(1em + 4vw);
+
+
+        img {
+            @include blockSize(auto, 30vw);
+        }
+    }
+
+}

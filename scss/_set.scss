@@ -1,0 +1,162 @@
+.set,
+.roll,
+.pissa {
+    @include flexbox(column, none, none);
+    overflow: hidden;
+
+    .title-group {
+        align-self: center;
+    }
+}
+
+.carousel-group {
+    @include flexbox(none, center, none);
+    position: relative;
+
+    .slick-dots {
+        position: absolute;
+        bottom: $setSlickDotsBottom;
+        @include flexbox(none, none, none);
+
+        .slick-active {
+            button {
+                background-color: $setSlickActiveBtnBgColor;
+            }
+        }
+
+        li {
+            &:nth-child(n+2) {
+                margin-left: $setSlickDotsMarginLeft;
+            }
+
+            button {
+                font-size: 0;
+                border-radius: 50%;
+                background-color: $setSlickDotsBgColor;
+                @include blockSize($setSlickDotsSize, $setSlickDotsSize);
+                transition: background-color .5s;
+            }
+        }
+    }
+
+    .slick-arrow {
+        position: absolute;
+        z-index: 2;
+        background-color: transparent;
+
+        &::before {
+            font-weight: 900;
+            font-family: $fontFamilyFontAwesomeFree;
+            display: block;
+            color: $setSlickDotsBgColor;
+        }
+    }
+
+    .slick-next {
+        &::before {
+            content: "\f061";
+        }
+    }
+
+    .slick-prev {
+        &::before {
+            content: "\f060";
+        }
+    }
+
+    .carousel__item {
+        cursor: pointer;
+        @include flexbox(column, none, none);
+        border-radius: 10px;
+        background-color: $setItemBgColor;
+        box-shadow: $setItemBoxShadow;
+        transition: box-shadow .5s;
+
+        &:hover {
+            box-shadow: $setItemHoverBoxShadow;
+        }
+    }
+}
+
+.carousel__img {
+    position: relative;
+
+    .carousel-img-circle {
+        position: absolute;
+        @include flexbox(none, center, center);
+        border-radius: 50%;
+        font-family: $fontFamilyRobotoSlabBold;
+        color: $setCarouselImgCircleColor;
+        font-weight: bold;
+        line-height: 0.876;
+    }
+
+    .carousel__xit {
+        box-shadow: $setCarouselImgCircleXitBoxShadow;
+        background: $setCarouselImgCircleXitBgColor;
+    }
+
+    .carousel__veg {
+        background: $setCarouselImgCircleVegBgColor;
+        box-shadow: $setCarouselImgCircleVegBoxShadow;
+    }
+
+}
+
+.carousel__content {
+    .carousel__number {
+        font-family: $fontFamilyOpenSansBold;
+        color: $setCarouselNumberColor;
+        line-height: 1.422;
+        text-align: center;
+    }
+
+    .carousel__count {
+        font-family: $fontFamilyOpenSansLight;
+        color: $setCarouselNumberColor;
+        line-height: 1.667;
+        text-align: center;
+    }
+
+    .carousel__price {
+        @include flexbox(none, space-between, center);
+
+        span {
+            @include flexbox(none, none, center);
+
+            button {
+                @include flexbox(none, center, center);
+                background-color: transparent;
+                border-radius: 50%;
+                border: $setCarouselPriceBtnBorder;
+                color: $setCarouselPriceBtnColor;
+                text-align: center;
+
+                span {
+                    padding: 0;
+                }
+            }
+        }
+
+        .carousel-price {
+            @include flexbox(none, none, flex-start);
+            font-family: $fontFamilyRobotoSlabBold;
+            color: $setCarouselNumberColor;
+            font-weight: bold;
+            line-height: 1.292;
+        }
+    }
+
+    .carousel__btn {
+        button {
+            line-height: 2.031;
+            text-align: center;
+            width: 100%;
+            font-family: $fontFamilyOpenSansSemiBold;
+            color: $setCarouselBtnColor;
+            text-transform: uppercase;
+            border-radius: 5px;
+            background-color: $setCarouselBtnBgColor;
+        }
+    }
+}

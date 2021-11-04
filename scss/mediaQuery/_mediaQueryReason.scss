@@ -1,0 +1,125 @@
+@media only screen and (min-width: 877px) {
+    .reason__title {
+        font-size: $reasonTitleFontSize;
+    }
+
+    .reason__main {
+        padding-top: $reasonMainPaddingTop;
+        @include flexbox(none, space-between, none);
+        flex-wrap: wrap;
+
+        label {
+            display: none;
+        }
+
+        .reason__item {
+            margin: $reasonItemMargin;
+            flex-basis: $reasonItemFlexBasis;
+
+            .reason__img {
+                height: $reasonImgHeight;
+            }
+
+            .reason__text {
+                font-size: $reasonTextFontSize;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 876px) and (min-width: 590px) {
+    .reason__title {
+        font-size: calc(.3em + 3.5vw);
+    }
+
+    .reason__main {
+        padding-top: $reasonMainPaddingTop;
+        @include flexbox(none, center, none);
+        flex-wrap: wrap;
+
+        label {
+            display: none;
+        }
+
+        .reason__item {
+            margin: $reasonItemMargin;
+            flex-basis: $mobileReasonItemFlexBasis;
+
+            .reason__img {
+                height: $reasonImgHeight;
+            }
+
+            .reason__text {
+                font-size: $reasonTextFontSize;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 589px) {
+    .reason__title {
+        font-size: calc(.4em + 6vw);
+        line-height: 1.2;
+
+        img {
+            display: none;
+        }
+    }
+
+    .reason__main {
+        padding-top: calc(.4em + 4vw);
+        @include flexbox(column, none, center);
+
+        input:checked {
+            &~.reason__item {
+                max-height: 160px;
+            }
+
+            &+label {
+                .visible {
+                    display: none;
+                }
+
+                .hidden {
+                    display: block;
+                }
+            }
+        }
+
+        label {
+            width: 100%;
+            border: 1px solid rgb(253, 79, 16);
+            border-radius: 5px;
+            order: 2;
+            font-size: calc(.2em + 2vw);
+            font-family: $fontFamilyOpenSansSemiBold;
+            color: rgb(253, 79, 16);
+            text-transform: uppercase;
+            line-height: 2.031;
+            text-align: center;
+            padding: 5px;
+
+            .hidden {
+                display: none;
+            }
+        }
+
+
+        .reason__item {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .5s;
+            margin: calc(.15em + 1.5vw) calc(.2em + 2vw);
+            width: 80%;
+
+            .reason__text {
+                margin: calc(.1em + 1.5em) 0;
+                font-size: calc(.2em + 2.5vw);
+            }
+        }
+
+        .view320 {
+            max-height: 160px;
+        }
+    }
+}

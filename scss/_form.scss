@@ -1,0 +1,64 @@
+.form {
+    background: $formBg;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    .container {
+        @include flexbox(none, flex-end, center);
+    }
+}
+
+.form-main {
+    .form__subtitle {
+        font-family: $fontFamilyOpenSansRegular;
+        color: $formSubTitleColor;
+        line-height: 1.881;
+    }
+
+    .form__title {
+        font-family: $fontFamilyLemonTuesdayRegular;
+        color: $formSubTitleColor;
+        line-height: 0.557;
+    }
+
+    form {
+        width: 100%;
+
+        input {
+            font-family: $fontFamilyOpenSansRegular;
+            color: $formSubTitleColor;
+            line-height: 1.714;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid $formSubTitleColor;
+            transition: background-color .5s;
+
+            &:focus {
+                background-color: $formInputFocusBgColor;
+            }
+
+            &::placeholder {
+                color: $formSubTitleColor;
+                line-height: 1.714;
+                font-family: $fontFamilyOpenSansRegular;
+            }
+        }
+
+        button {
+            font-family: $fontFamilyOpenSansSemiBold;
+            color: $formSubTitleColor;
+            text-transform: uppercase;
+            line-height: 1.2;
+            border-radius: 5px;
+            background-color: $formBtnBgColor;
+        }
+    }
+
+    .form__content {
+        font-family: $fontFamilyOpenSansRegular;
+        color: $formContentColor;
+        line-height: 2.509;
+    }
+}

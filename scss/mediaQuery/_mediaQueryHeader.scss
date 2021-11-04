@@ -1,0 +1,596 @@
+@media only screen and (min-width: 1130px) {
+    .header__info {
+        padding: $headerInfoPadding;
+    }
+
+    .header__address {
+        padding-left: $headerAddressPaddingLeft;
+
+        a {
+            i {
+                padding-right: 5px;
+                font-size: $headerAddressIconSize;
+            }
+
+            span {
+                font-size: $headerAddressFontSize;
+            }
+        }
+    }
+
+    .header__email {
+        a {
+            i {
+                padding-right: 5px;
+                font-size: $headerEmailIconSize;
+            }
+
+            span {
+                font-size: $headerEmailFontSize;
+            }
+        }
+    }
+
+    .header__tell {
+        padding-left: $headerTellPaddingLeft;
+
+        span {
+            &:nth-child(1) {
+                font-size: $headerTellTopFontSize;
+            }
+
+            &:nth-child(2) {
+                font-size: $headerTellBottomFontSize;
+            }
+        }
+    }
+
+    .header__btn {
+        padding-left: $headerBtnPaddingLeft;
+
+        button {
+            padding: $headerBtnPadding;
+            border-radius: 5px;
+            font-size: $headerBtnFontSize;
+        }
+    }
+
+    .header__menu {
+        width: 100%;
+
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            @include blockSize(100%, 1px);
+            background-color: $headerMenuBorderColor;
+            position: absolute;
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+
+        ul {
+            li {
+                a {
+                    padding: $headerMenuItemPadding;
+                    font-size: $headerMenuItemFontSize;
+
+                    i {
+                        font-size: $headerMenuItemIconSize;
+                    }
+                }
+
+                .shopping-basket {
+                    i::after {
+                        content: "2";
+                        display: block;
+                        padding: $headerMenuShoppingBasketPadding;
+                        background-color: $headerMenuShoppingBasketBgColor;
+                        border-radius: 3px;
+                        position: absolute;
+                        top: -5px;
+                        transform: translateX(5px);
+                        font-size: $headerMenuShoppingBasketFontSize;
+                        font-family: $fontFamilyOpenSansSemiBold;
+                        color: $headerMenuShoppingBasketColor;
+                        text-transform: uppercase;
+                        line-height: 1.2;
+                    }
+                }
+            }
+
+            li:not(.menu-dropdown) {
+                a {
+                    i {
+                        padding: $headerMenuIconPadding;
+                    }
+                }
+            }
+
+            .menu-dropdown {
+                ul {
+                    li {
+                        a {
+                            background-color: #fff;
+                        }
+                    }
+                }
+
+                a i {
+                    padding-left: $headerMenuDropDownIconPaddingLeft;
+                }
+            }
+        }
+    }
+
+    .header-750 {
+        display: none;
+    }
+
+    .header__logo {
+        img {
+            @include blockSize(auto, auto);
+        }
+
+        .header-logo-320 {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 1129px) and (min-width: 877px) {
+    .header__info {
+        padding: $headerInfoPadding;
+    }
+
+    .header__address {
+        padding-left: $mobileHeaderAddressPaddingLeft;
+
+        a {
+            i {
+                padding-right: 5px;
+                font-size: $mobileHeaderAddressIconSize;
+            }
+
+            span {
+                font-size: $mobileHeaderAddressFontSize;
+            }
+        }
+    }
+
+    .header__email {
+        a {
+            i {
+                padding-right: 5px;
+                font-size: $mobileHeaderEmailIconSize;
+            }
+
+            span {
+                font-size: $mobileHeaderEmailFontSize;
+            }
+        }
+    }
+
+    .header__tell {
+        padding-left: $mobileHeaderTellPaddingLeft;
+
+        span {
+            &:nth-child(1) {
+                font-size: $mobileHeaderTellTopFontSize;
+            }
+
+            &:nth-child(2) {
+                font-size: $mobileHeaderTellBottomFontSize;
+            }
+        }
+    }
+
+    .header__btn {
+        padding-left: $mobileHeaderBtnPaddingLeft;
+
+        button {
+            padding: $mobileHeaderBtnPadding;
+            border-radius: 5px;
+            font-size: $mobileHeaderBtnFontSize;
+        }
+    }
+
+    .header__menu {
+        width: 100%;
+
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            @include blockSize(100%, 1px);
+            background-color: $headerMenuBorderColor;
+            position: absolute;
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+
+        ul {
+            li {
+                a {
+                    padding: $mobileHeaderMenuItemPadding;
+                    font-size: $mobileHeaderMenuItemFontSize;
+
+                    i {
+                        font-size: $mobileHeaderMenuItemIconSize;
+                    }
+                }
+
+                .shopping-basket {
+                    i::after {
+                        content: "2";
+                        display: block;
+                        padding: $headerMenuShoppingBasketPadding;
+                        background-color: $headerMenuShoppingBasketBgColor;
+                        border-radius: 3px;
+                        position: absolute;
+                        top: -5px;
+                        transform: translateX(5px);
+                        font-size: $headerMenuShoppingBasketFontSize;
+                        font-family: $fontFamilyOpenSansSemiBold;
+                        color: $headerMenuShoppingBasketColor;
+                        text-transform: uppercase;
+                        line-height: 1.2;
+                    }
+                }
+            }
+
+            li:not(.menu-dropdown) {
+                a {
+                    i {
+                        padding: $mobileHeaderMenuIconPadding;
+                    }
+                }
+            }
+
+            .menu-dropdown {
+                ul {
+                    li {
+                        background-color: #fff;
+                    }
+                }
+
+                a i {
+                    padding-left: $mobileHeaderMenuDropDownIconPaddingLeft;
+                }
+            }
+        }
+    }
+
+    .header-750 {
+        display: none;
+    }
+
+
+    .header__logo {
+        img {
+            @include blockSize(auto, auto);
+        }
+
+        .header-logo-320 {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 876px) and (min-width: 590px) {
+    .header-desktop {
+        display: none;
+    }
+
+    .header-750 {
+        padding: $headerInfoPadding;
+
+        .container {
+            @include flexbox(none, space-between, center);
+            position: relative;
+        }
+
+        input {
+            display: none;
+
+            &:checked~.hamburger__menu {
+                left: 0;
+            }
+        }
+
+        label {
+            display: block;
+
+            span {
+                display: block;
+                @include blockSize(20px, 2px);
+                background-color: $headerHamburgerMenuBgColor;
+
+                &:nth-child(n+2) {
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
+
+    .header__address {
+        a {
+            i {
+                padding-right: 5px;
+                font-size: $headerAddressIconSize;
+            }
+
+            span {
+                font-size: $headerAddressFontSize;
+            }
+        }
+    }
+
+    .header__email {
+        a {
+            i {
+                padding-right: 5px;
+                font-size: $headerEmailIconSize;
+            }
+
+            span {
+                font-size: $headerEmailFontSize;
+            }
+        }
+    }
+
+    .header__tell {
+        span {
+            &:nth-child(1) {
+                font-size: $headerTellTopFontSize;
+            }
+
+            &:nth-child(2) {
+                font-size: $headerTellBottomFontSize;
+            }
+        }
+    }
+
+    .header__btn {
+        button {
+            padding: $headerBtnPadding;
+            border-radius: 5px;
+            font-size: $headerBtnFontSize;
+        }
+    }
+
+    .header__menu {
+        ul {
+            li {
+                &:nth-child(2) {
+                    margin-left: 20px;
+                }
+
+                a {
+                    i {
+                        font-size: $headerMenuItemIconSize;
+                    }
+                }
+            }
+        }
+    }
+
+    .header__logo {
+        img {
+            @include blockSize(auto, auto);
+        }
+
+        .header-logo-320 {
+            display: none;
+        }
+    }
+
+    .hamburger__menu {
+        @include blockSize(100vw, 100vh);
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: calc(-100% - 15px);
+        transition: left .5s;
+        background-color: rgba($color: #000000, $alpha: .3);
+
+        .hamburgerMenu-main {
+            background-color: #fff;
+            @include blockSize(50%, 100%);
+            padding: $headerHamburgerMenuPadding;
+            @include flexbox(column, space-between, none);
+
+            label {
+                flex-basis: 20%;
+                align-self: flex-end;
+            }
+
+            ul {
+                flex-basis: 80%;
+                @include flexbox(column, space-between, none);
+
+                li {
+                    a {
+                        font-size: $headerHamburgerMenuFontSize;
+                        font-family: $fontFamilyOpenSansSemiBold;
+                        color: $headerHamburgerMenuColor;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            .hamburger-innerInfo,
+            .hamburger-innerMenu {
+                height: 45%;
+                @include flexbox(column, space-evenly, none);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 589px) {
+    .header-desktop {
+        display: none;
+    }
+
+    .header-750 {
+        padding: calc(.2em + 2vw) 0 calc(.3em + 3vw) 0;
+
+        .container {
+            position: relative;
+            @include flexbox(none, space-between, center);
+        }
+
+        input {
+            display: none;
+
+            &:checked~.hamburger__menu {
+                left: 0;
+            }
+        }
+
+        label {
+            span {
+                display: block;
+                @include blockSize(20px, 2px);
+                background-color: #4ec83d;
+
+                &:nth-child(n+2) {
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
+
+    .header__address {
+        a {
+            i {
+                padding-right: 5px;
+                font-size: calc(.2em + 3vw);
+            }
+
+            span {
+                font-size: calc(.2em + 3vw);
+            }
+        }
+    }
+
+    .header__email {
+        a {
+            i {
+                padding-right: 5px;
+                font-size: calc(.2em + 3vw);
+            }
+
+            span {
+                font-size: calc(.2em + 3vw);
+            }
+        }
+    }
+
+    .header__tell {
+        span {
+            &:nth-child(1) {
+                font-size: calc(.3em + 3vw);
+            }
+
+            &:nth-child(2) {
+                margin-top: calc(.1em + 1vw);
+                font-size: calc(.2em + 2vw);
+            }
+        }
+    }
+
+    .header__btn {
+        button {
+            padding: calc(.2em + 1.5vw) calc(.2em + 3vw);
+            border-radius: 5px;
+            font-size: calc(.2em + 3vw);
+        }
+    }
+
+    .header__menu {
+        ul {
+            li {
+                &:nth-child(2) {
+                    margin-left: calc(.2em + 3vw);
+                }
+
+                a {
+                    i {
+                        font-size: calc(.3em + 3vw);
+                    }
+                }
+            }
+        }
+    }
+
+    .header__logo {
+        img {
+            @include blockSize(calc(1em + 12vw), auto);
+        }
+
+        .header-logo {
+            display: none;
+        }
+    }
+
+    .hamburger__menu {
+        @include blockSize(100vw, 100vh);
+        position: fixed;
+        z-index: 5;
+        left: calc(-100% - 15px);
+        top: 0;
+        transition: left .5s;
+        background-color: rgba($color: #000000, $alpha: .3);
+
+        .hamburgerMenu-main {
+            background-color: #fff;
+            @include blockSize(80%, 100%);
+            padding: calc(.4em + 4vw) calc(.4em + 4vw) calc(.5em + 5vw) calc(.5em + 5vw);
+            @include flexbox(column, space-between, none);
+
+            label {
+                align-self: flex-end;
+                flex-basis: 20%;
+                display: block;
+            }
+
+            ul {
+                flex-basis: 80%;
+                @include flexbox(column, space-between, none);
+
+                li {
+                    a {
+                        display: block;
+                        font-size: calc(.2em + 3vw);
+                        font-family: $fontFamilyOpenSansSemiBold;
+                        color: rgb(0, 0, 0);
+                        font-weight: bold;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            .hamburger-innerMenu,
+            .hamburger-innerInfo {
+                height: 45%;
+                @include flexbox(column, space-evenly, none);
+            }
+
+        }
+    }
+}

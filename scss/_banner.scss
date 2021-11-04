@@ -1,0 +1,120 @@
+.banner {
+    width: 100%;
+    overflow: hidden;
+
+    .banner-carousel {
+        @include flexbox(column, center, none);
+        position: relative;
+
+        .slick-next {
+            right: calc(.3em + 3vw);
+
+            &::after {
+                content: "\f105";
+            }
+        }
+
+        .slick-prev {
+            left: calc(.3em + 3vw);
+
+            &::after {
+                content: "\f104";
+            }
+        }
+
+        .slick-arrow {
+            position: absolute;
+            z-index: 3;
+            @include blockSize($bannerSlickArrowBlockSize, $bannerSlickArrowBlockSize);
+            border-radius: 50%;
+            @include flexbox(none, center, center);
+            background-color: $bannerSlickArrowBgColor;
+
+            &::after {
+                font-family: $fontFamilyFontAwesomeFree;
+                font-weight: 900;
+                color: $bannerSlickArrowIconColor;
+                font-size: $bannerSlickArrowIconSize;
+                position: absolute;
+            }
+        }
+
+        .slick-dots {
+            width: 100%;
+            @include flexbox(none, center, center);
+
+            .slick-active {
+                button {
+                    background-color: $bannerSlickDotsActiveBtnBgColor;
+                    border-color: $bannerSlickDotsActiveBtnBorderColor;
+                }
+            }
+
+            li {
+                button {
+                    font-size: 0;
+                    @include blockSize(15px, 15px);
+                    border-radius: 50%;
+                    border: $bannerSlickDotsBtnBorder;
+                    background-color: transparent;
+                    transition: background-color .5s, border-color .5s;
+                }
+            }
+        }
+
+        .slick-track {
+            @include flexbox(none, none, none);
+        }
+
+        .banner__item {
+            background: $bannerItemBgUrl;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.banner__content {
+    @include flexbox(column, none, none);
+
+    .banner__title {
+        font-family: $fontFamilyLemonTuesdayRegular;
+        color: $bannerTitleColor;
+        line-height: 0.909;
+    }
+
+    .banner__text {
+        font-family: $fontFamilyOpenSansItalic;
+        color: $bannerTextColor;
+        font-style: italic;
+        line-height: 1.2;
+    }
+
+    .banner__btn {
+        button {
+            font-family: $fontFamilyOpenSansRegular;
+            color: $bannerBtnColor;
+            text-transform: uppercase;
+            line-height: 1.2;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            background-color: $bannerBtnBgColor;
+        }
+    }
+}
+
+.banner__discount {
+    span {
+        display: block;
+        border-radius: 50%;
+        background: $bannerDiscountBgColor;
+        @include flexbox(none, center, center);
+        font-family: $fontFamilyOpenSansBold;
+        color: $bannerDiscountColor;
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
+    }
+}

@@ -1,0 +1,111 @@
+@media only screen and (min-width: 877px) {
+    .text__content {
+        img {
+            margin: $textContentImgMargin;
+        }
+    }
+}
+
+@media only screen and (max-width: 876px) and (min-width: 590px) {
+    .text__content {
+        img {
+            margin: $mobileTextContentImgMargin;
+        }
+    }
+}
+
+@media only screen and (min-width: 590px) {
+    .text__main {
+        padding-bottom: $textMainPaddingBottom;
+
+        .text__subtitle {
+            font-size: $textSubtitleFontSize;
+            padding: $textSubtitlePadding;
+        }
+
+        .text__content {
+            label {
+                display: none;
+            }
+
+            p {
+                font-size: $textContentFontSize;
+                margin-bottom: $textContentMarginBottom;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 589px) {
+    .text__title {
+        img {
+            display: none;
+        }
+    }
+
+    .text__main {
+        padding-bottom: calc(.5em + 6vw);
+
+        .text__subtitle {
+            font-size: calc(.4em + 3vw);
+            padding: calc(.4em + 4vw) 0;
+        }
+
+
+        .text__content {
+            width: 100%;
+            @include flexbox(column, none, none);
+
+            img {
+                display: none;
+            }
+
+            p {
+                transition: max-height .5s;
+                overflow: hidden;
+                font-size: calc(.2em + 2vw);
+                margin-bottom: calc(.3em + 3vw);
+            }
+
+            input {
+                &~p {
+                    max-height: 0;
+                }
+
+                &:checked~p {
+                    max-height: 500px;
+                }
+
+                &:checked+label {
+                    .text-hidden {
+                        display: block;
+                    }
+
+                    .text-visible {
+                        display: none;
+                    }
+                }
+            }
+
+            label {
+                display: block;
+                width: 100%;
+                border: 1px solid rgb(253, 79, 16);
+                border-radius: 5px;
+                order: 2;
+                font-size: calc(.2em + 2vw);
+                font-family: $fontFamilyOpenSansSemiBold;
+                color: rgb(253, 79, 16);
+                text-transform: uppercase;
+                line-height: 2.031;
+                text-align: center;
+                padding: 5px;
+
+                .text-hidden {
+                    display: none;
+                }
+            }
+
+        }
+    }
+}

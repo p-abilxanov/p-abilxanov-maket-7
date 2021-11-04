@@ -1,0 +1,199 @@
+@media only screen and (min-width: 1201px) {
+    .banner__item {
+        .container {
+            @include flexbox(none, none, none);
+            padding-top: $bannerContainerPaddingTop;
+        }
+    }
+
+    .banner-carousel {
+        .slick-dots {
+            position: absolute;
+            bottom: $bannerSlickDotsBottom;
+
+            li {
+                &:nth-child(n+2) {
+                    margin-left: $bannerSlickDotsMarginLeft;
+                }
+            }
+        }
+    }
+
+    .banner__content {
+        width: $bannerContentWidth;
+
+        .banner__title {
+            font-size: $bannerTitleFontSize;
+        }
+
+        .banner__text {
+            padding: $bannerTextPadding;
+            font-size: $bannerTextFontSize;
+        }
+
+        .banner__btn {
+            padding-bottom: $bannerBtnPaddingBottom;
+
+            button {
+                font-size: $bannerBtnFontSize;
+                padding: $bannerBtnPadding;
+            }
+        }
+    }
+
+    .banner__discount {
+        span {
+            @include blockSize($bannerDiscountSize, $bannerDiscountSize);
+            font-size: $bannerDiscountFontSize;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 877px) {
+    .banner__item {
+        .container {
+            @include flexbox(none, center, none);
+            padding-top: $bannerContainerPaddingTop;
+        }
+    }
+
+    .banner-carousel {
+        .slick-dots {
+            position: absolute;
+            bottom: $mobileBannerSlickDotsBottom;
+
+            li {
+                &:nth-child(n+2) {
+                    margin-left: $bannerSlickDotsMarginLeft;
+                }
+            }
+        }
+    }
+
+    .banner__content {
+        width: $mobileBannerContentWidth;
+
+        .banner__title {
+            font-size: $mobileBannerTitleFontSize;
+        }
+
+        .banner__text {
+            padding: $mobileBannerTextPadding;
+            font-size: $mobileBannerTextFontSize;
+        }
+
+        .banner__btn {
+            padding-bottom: $mobileBannerBtnPaddingBottom;
+
+            button {
+                font-size: $mobileBannerBtnFontSize;
+                padding: $mobileBannerBtnPadding;
+            }
+        }
+    }
+
+    .banner__discount {
+        span {
+            @include blockSize($mobileBannerDiscountSize, $mobileBannerDiscountSize);
+            font-size: $mobileBannerDiscountFontSize;
+        }
+    }
+}
+
+@media only screen and (max-width: 876px) and (min-width: 590px) {
+    .banner__item {
+        .container {
+            @include flexbox(none, none, none);
+            padding-top: $mobileBannerContainerPaddingTop;
+        }
+    }
+
+    .banner-carousel {
+        .slick-dots {
+            position: absolute;
+            bottom: $mobileBannerSlickDotsBottom;
+
+            li {
+                &:nth-child(n+2) {
+                    margin-left: $bannerSlickDotsMarginLeft;
+                }
+            }
+        }
+    }
+
+    .banner__content {
+        width: $mobileBannerContentWidth;
+
+        .banner__title {
+            font-size: $mobileBannerTitleFontSize;
+        }
+
+        .banner__text {
+            padding: $mobileBannerTextPadding;
+            font-size: $mobileBannerTextFontSize;
+        }
+
+        .banner__btn {
+            padding-bottom: $mobileBannerBtnPaddingBottom;
+
+            button {
+                font-size: $mobileBannerBtnFontSize;
+                padding: $mobileBannerBtnPadding;
+            }
+        }
+    }
+
+    .banner__discount {
+        span {
+            @include blockSize($mobileBannerDiscountSize, $mobileBannerDiscountSize);
+            font-size: $mobileBannerDiscountFontSize;
+        }
+    }
+}
+
+@media only screen and (max-width: 589px) {
+    .banner__item {
+        .container {
+            @include flexbox(none, none, none);
+            padding-top: calc(1em + 10vw);
+        }
+    }
+
+    .banner-carousel {
+        .slick-dots {
+            padding: calc(.3em + 3vw) 0;
+
+            li {
+                &:nth-child(n+2) {
+                    margin-left: calc(.3em + 3vw);
+                }
+            }
+        }
+    }
+
+    .banner__content {
+        padding-right: calc(.2em + 2vw);
+
+        .banner__title {
+            font-size: calc(1vw + 13vw);
+        }
+
+        .banner__text {
+            padding: calc(.4em + 4vw) 0 calc(1em + 10vw) 0;
+            font-size: calc(.2em + 3vw);
+        }
+
+        .banner__btn {
+            display: none;
+        }
+    }
+
+    .banner__discount {
+        padding-top: calc(1em + 5vw);
+
+        span {
+            @include blockSize(calc(1em + 15vw), calc(1em + 15vw));
+            font-size: calc(.2em + 3vw);
+        }
+    }
+}

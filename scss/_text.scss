@@ -1,0 +1,32 @@
+.text {
+    .container {
+        @include flexbox(column, none, center);
+    }
+}
+
+.text__main {
+    @include flexbox(column, none, none);
+
+    .text__subtitle {
+        font-family: $fontFamilyOpenSansBold;
+        color: $textSubtitleColor;
+        line-height: 1.2;
+    }
+
+    .text__content {
+        img {
+            float: right;
+            @include blockSize(auto, auto);
+        }
+
+        input {
+            display: none;
+        }
+
+        p {
+            font-family: $fontFamilyOpenSansRegular;
+            color: $textContentColor;
+            line-height: 1.429;
+        }
+    }
+}
